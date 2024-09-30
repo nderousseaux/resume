@@ -1,0 +1,61 @@
+# Build and deploy resources to GitHub Pages
+name: Build and Deploy
+
+# On push to main branch
+on:
+  push:
+    branches: ["main"]
+
+  # Manually trigger a workflow_dispatch
+  workflow_dispatch:
+
+# Permissions to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only allow one deployment at a time
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Build then deploy
+jobs:
+
+  # Build resume
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Build resume
+        run: npm run build
+
+      - name: Rename to index.html
+        run: mv resume.html index.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './index.html'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
