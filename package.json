@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "jsonresume-theme-stackoverflow": "git@github.com:nderousseaux/jsonresume-theme-stackoverflow-french.git",
+    "jsonresume-theme-stackoverflow": "https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french.git",
     "resume-cli": "^3.1.2"
   }
 }

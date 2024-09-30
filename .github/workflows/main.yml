@@ -5,29 +5,28 @@ name: Deploy
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
-build:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
 
+      - name: Install dependencies
+        run: npm install
 
-    - name: Install dependencies
-      run: npm install
+      - name: Export resume
+        run: npx resume export resume.html --theme stackoverflow
 
-    - name: Export resume
-      run: npx resume export resume.html --theme stackoverflow
-
-    - name: Upload resume
-      uses: actions/upload-artifact@v2
-      with:
-        name: resume
-        path: resume.html
+      - name: Upload resume
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume
+          path: resume.html
