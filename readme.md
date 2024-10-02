@@ -2,6 +2,8 @@
 
 Il s'agit de mon cv, avec le thème stackoverflow, francisé.
 
+Disponible à l'adresse : [https://nderousseaux.github.io/resume](https://nderousseaux.github.io/resume)
+
 ## Installation
 
 ```bash
