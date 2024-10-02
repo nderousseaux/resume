@@ -6,7 +6,7 @@
     "email": "n.derousseaux@icloud.com",
     "phone": "+33 6 20 00 46 28",
     "url": "https://nathanaelderousseaux.fr",
-    "summary": "Je m'appelle Nathanaël et je suis diplômé d'un master en sécurité des systèmes et des réseaux, ainsi que d'une licence professionnelle en développement web / DevOps.Ce double cursus m'a permis d'appréhender, aussi bien le développement d'applications web, que l'environnement dans lequel ces applications évoluent.C'est pourquoi je recherche aujourd'hui un poste de DevOps, où mes compétences en développement et en gestion de systèmes pourraient permettre d'optimiser les processus de développement et de déploiement.Je suis particulièrement intéressé par les missions qui me permettraient d'automatiser les déploiements, d'améliorer la sécurité, d'optimiser les performances ou d'exploiter les services cloud.",
+    "summary": "Je m'appelle Nathanaël et je suis diplômé d'un master en sécurité des systèmes et des réseaux, ainsi que d'une licence professionnelle en développement web / DevOps. Ce double cursus m'a permis d'appréhender, aussi bien le développement d'applications web, que l'environnement dans lequel ces applications évoluent. C'est pourquoi je recherche aujourd'hui un poste de DevOps, où mes compétences en développement et en gestion de systèmes pourraient permettre d'optimiser les processus de développement et de déploiement. Je suis particulièrement intéressé par les missions qui me permettraient d'automatiser les déploiements, d'améliorer la sécurité, d'optimiser les performances ou d'exploiter les services cloud.",
     "location": {
       "postalCode": "67000",
       "city": "Strasbourg",
@@ -83,7 +83,7 @@
       "studyType": "Licence",
       "startDate": "2021-09-01",
       "endDate": "2022-08-01",
-      "summary": "Au cours de ma Licence d'Informatique, j'ai approfondi mes connaissances en mathématiques appliquées à l'informatique.J'ai pu étudier des domaines tels que la mesure de réseaux et des algorithmes, la compression, le calcul parallèle et approfondir mes connaissances en théorie des graphes.C'est aussi au cours de cette année que nous avons réalisé un projet web d'envergure avec 9 autres étudiants, ou je me suis chargé de processus de tests et de mise en production. Ce projet était entièrement organisé avec la méthodologie SCRUM."
+      "summary": "Au cours de ma Licence d'Informatique, j'ai approfondi mes connaissances en mathématiques appliquées à l'informatique.J'ai pu étudier des domaines tels que la mesure de réseaux et des algorithmes, la compression, le calcul parallèle et approfondir mes connaissances en théorie des graphes. C'est aussi au cours de cette année que nous avons réalisé un projet web d'envergure avec 9 autres étudiants, ou je me suis chargé de processus de tests et de mise en production. Ce projet était entièrement organisé avec la méthodologie SCRUM."
     },
 
     {
@@ -92,7 +92,7 @@
       "studyType": "Licence Professionnelle",
       "startDate": "2020-09-01",
       "endDate": "2021-09-01",
-      "summary": "Au cours de ma Licence Professionnelle Conception et Développement d'Applications Distribuées, j'ai acquis des compétences avancées en développement web et en automatisation des processus de déploiements.J'ai été formé à l'utilisation de frameworks web à la fois pour le front-end et le back-end et le mobile, avec React.js, Vue.js, Laravel, Symfony, JavaEE et surtout Flask avec Django et Pyramid.C'est surtout au cours de cette formation que j'ai pu aborder en détails les différents outils du DevOps : Docker, GitLab CI, Sonarqube, et du scripting Python."
+      "summary": "Au cours de ma Licence Professionnelle Conception et Développement d'Applications Distribuées, j'ai acquis des compétences avancées en développement web et en automatisation des processus de déploiements. J'ai été formé à l'utilisation de frameworks web à la fois pour le front-end et le back-end et le mobile, avec React.js, Vue.js, Laravel, Symfony, JavaEE et surtout Flask avec Django et Pyramid. C'est surtout au cours de cette formation que j'ai pu aborder en détails les différents outils du DevOps : Docker, GitLab CI, Sonarqube, et du scripting Python."
     },
 
     {
@@ -101,7 +101,7 @@
       "studyType": "DUT",
       "startDate": "2018-09-01",
       "endDate": "2020-08-01",
-      "summary": "Au cours de mon DUT Informatique, j'ai acquis les bases essentielles de l'informatique, de développement, aux infrastructures en passant par le cloud.J'ai pu acquérir des bases en programmation python, C, Java, en routage, protocole réseau, et en infrastructure cloud.C'est aussi au cours de cette formation que j'ai pu approcher pour la première fois les méthodologies agile avec SCRUM."
+      "summary": "Au cours de mon DUT Informatique, j'ai acquis les bases essentielles de l'informatique, de développement, aux infrastructures en passant par le cloud. J'ai pu acquérir des bases en programmation python, C, Java, en routage, protocole réseau, et en infrastructure cloud. C'est aussi au cours de cette formation que j'ai pu approcher pour la première fois les méthodologies agile avec SCRUM."
     }
   ],
 
