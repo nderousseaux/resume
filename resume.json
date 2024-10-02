@@ -29,7 +29,7 @@
 
   "work": [
     {
-      "name": "IMT Atlantique",
+      "company": "IMT Atlantique",
       "position": "Stagiaire chercheur sécurité blockchain",
       "startDate": "2024-02-01",
       "endDate": "2024-08-01",
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "name": "IUT Robert Schuman",
+      "company": "l'IUT Robert Schuman",
       "position": "Développeur Full Stack / DevOps",
       "startDate": "2020-06-01",
       "endDate": "2021-09-01",
@@ -61,7 +61,7 @@
     "endDate": "2021-02-01",
     "summary": "Eiko est une association ayant pour but la création d'outils digitaux pour permettre au citoyen de diminuer facilement son empreinte écologique. En collaboration avec l'association I-Boycott.",
     "highlights": [
-      "Intégration dans une équipe de développement d'une extension web permettant d'avertir le consommateur d'éventuel boycotts en cours sur un produit.",
+      "Intégration dans une équipe de développement d'une extension web permettant d'avertir le consommateur d'éventuels boycotts en cours sur un produit.",
       "Ajout de fonctionnalités sur l'extension, amélioration de la pipeline de test, avec sonarqube et eslint."
     ]
   }],
@@ -69,7 +69,7 @@
 
   "education": [
     {
-      "institution": "Université de Strasbourg",
+      "institution": "l'Université de Strasbourg",
       "area": "Sciences et Ingénieurie des Réseaux, de l'Internet et des Systèmes",
       "studyType": "Master",
       "startDate": "2022-09-01",
@@ -78,7 +78,7 @@
     },
 
     {
-      "institution": "Université de Strasbourg",
+      "institution": "l'Université de Strasbourg",
       "area": "Informatique",
       "studyType": "Licence",
       "startDate": "2021-09-01",
@@ -87,7 +87,7 @@
     },
 
     {
-      "institution": "Université de Strasbourg",
+      "institution": "l'Université de Strasbourg",
       "area": "Conception et Développement d'Applications Distribués",
       "studyType": "Licence Professionnelle",
       "startDate": "2020-09-01",
@@ -96,7 +96,7 @@
     },
 
     {
-      "institution": "Université de Strasbourg",
+      "institution": "l'Université de Strasbourg",
       "area": "Informatique",
       "studyType": "DUT",
       "startDate": "2018-09-01",
@@ -199,7 +199,7 @@
       ]
     },
     {
-      "name": "Sport",
+      "name": "Sports",
       "keywords": [
         "Vélo de randonnée",
         "Trekking",

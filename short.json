@@ -1,0 +1,194 @@
+{
+  "basics": {
+    "name": "Nathanaël Derousseaux",
+    "label": "Ingénieur DevOps",
+    "image": "https://gravatar.com/avatar/561e6d4e74d7f8c5fb5b89606c4319e822d8f70856cf859a17cad0a0b2916072?s=2048",
+    "email": "n.derousseaux@icloud.com",
+    "phone": "+33 6 20 00 46 28",
+    "url": "https://nathanaelderousseaux.fr",
+    "location": {
+      "postalCode": "67000",
+      "city": "Strasbourg",
+      "region": "France"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "nderousseaux",
+        "url": "https://www.linkedin.com/in/nderousseaux/"
+      },
+      {
+        "network": "GitHub",
+        "username": "nderousseaux",
+        "url": "https://github.com/nderousseaux"
+      }
+    ]
+  },
+
+
+  "work": [
+    {
+      "company": "IMT Atlantique",
+      "position": "Stagiaire chercheur sécurité blockchain",
+      "startDate": "2024-02-01",
+      "endDate": "2024-08-01",
+      "summary": "Rédaction d'un article sur l'algorithme de compression MLS des blockchain à preuves de travail."
+    },
+    {
+      "company": "l'IUT Robert Schuman",
+      "position": "Développeur Full Stack / DevOps",
+      "startDate": "2020-06-01",
+      "endDate": "2021-09-01",
+      "summary": "Développement et création de pipelines CI/CD sécurisées pour l'IUT Robert Schuman et pour le CFAU de Mulhouse."
+    }
+
+  ],
+
+
+  "volunteer": [{
+    "organization": "Eiko",
+    "position": "Développeur Web",
+    "startDate": "2021-01-01",
+    "endDate": "2021-02-01",
+    "summary": "Développement d'une extension web pour avertir le consommateur d'éventuels boycotts en cours sur un produit. "
+  }],
+
+
+  "education": [
+    {
+      "institution": "l'Université de Strasbourg",
+      "area": "Sciences et Ingénieurie des Réseaux, de l'Internet et des Systèmes",
+      "studyType": "Master",
+      "startDate": "2022-09-01",
+      "endDate": "2024-08-01"
+    },
+
+    {
+      "institution": "l'Université de Strasbourg",
+      "area": "Informatique",
+      "studyType": "Licence",
+      "startDate": "2021-09-01",
+      "endDate": "2022-08-01"
+    },
+
+    {
+      "institution": "l'Université de Strasbourg",
+      "area": "Conception et Développement d'Applications Distribués",
+      "studyType": "Licence Professionnelle",
+      "startDate": "2020-09-01",
+      "endDate": "2021-09-01"
+    },
+
+    {
+      "institution": "l'Université de Strasbourg",
+      "area": "Informatique",
+      "studyType": "DUT",
+      "startDate": "2018-09-01",
+      "endDate": "2020-08-01"
+    }
+  ],
+
+
+  "skills": [
+    {
+      "name": "DevOps tools & Containers",
+      "keywords": [
+        "Docker",
+        "Ansible",
+        "OpenStack",
+        "Nomad",
+        "Consul",
+        "Sonarqube",
+        "Docker Compose",
+        "Terraform",
+        "Github Actions",
+        "GitLab CI"
+      ]
+    },
+
+    {
+      "name": "Framework Front-end",
+      "keywords": [
+        "Vue.js",
+        "React Native",
+        "React.js",
+        "Symfony"
+      ]
+    },
+    
+    {
+      "name": "Framework Back-end",
+      "keywords": [
+        "Flask",
+        "Django",
+        "Express",
+        "Pyramid",
+        "SQLAlchemy",
+        "Sequelize"
+      ]
+    },
+
+    {
+      "name": "Cloud",
+      "keywords": [
+        "Azure",
+        "AWS",
+        "Google Cloud"
+      ]
+    },
+
+    {
+      "name": "Bases de données / Big Data",
+      "keywords": [
+        "Mysql",
+        "Oracle",
+        "Redis",
+        "Mongo DB"
+      ]
+    },
+
+    {
+      "name": "Méthodes",
+      "keywords": [
+        "Agile Scrum"
+      ]
+    }
+  ],
+
+
+  "languages": [
+    {
+      "language": "Français",
+      "fluency": "Natif"
+    },
+    {
+      "language": "Anglais",
+      "fluency": "B2"
+    }
+  ],
+
+
+  "interests": [
+    {
+      "name": "Hobbies",
+      "keywords": [
+        "Informatique"
+      ]
+    },
+    {
+      "name": "Arts",
+      "keywords": [
+        "Théatre"
+      ]
+    },
+    {
+      "name": "Sports",
+      "keywords": [
+        "Vélo de randonnée",
+        "Trekking",
+        "Running",
+        "Plongée sous-marine"
+      ]
+    }
+  ]
+}
