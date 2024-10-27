@@ -33,7 +33,7 @@
       "position": "Stagiaire chercheur sécurité blockchain",
       "startDate": "2024-02-01",
       "endDate": "2024-08-01",
-      "summary": "Stage de recherche dans le laboratoire SOTERN d'IMT Atlantique à Rennes. Encadré par trois chercheurs. Cette expérience m'a permis d'approfondir très sérieusement mes compétences en mathématiques.",
+      "summary": "Stage de recherche dans le laboratoire SOTERN d'IMT Atlantique à Rennes. Encadré par trois chercheurs. Cette expérience m'a permis d'approfondir très sérieusement mes compétences en mathématiques, notemment en probabilité, théorie de graphes et en cryptographie. Cela a aussi été l'occasion de me perfectionner en calcul scientifique avec scipy.",
       "highlights": [
         "Développement d'un algorithme de compression des blockchains permettant de réduire considérablement leur taille, tout en sauvegardant leurs propriétés de sécurité. Écriture d'un article sur le sujet.",
         "Création d'un simulateur permettant de valider nos résultats théoriques."
@@ -126,7 +126,7 @@
     },
 
     {
-      "name": "Framework Front-end",
+      "name": "Développement Front-end",
       "keywords": [
         "Vue.js",
         "React Native",
@@ -136,14 +136,16 @@
     },
     
     {
-      "name": "Framework Back-end",
+      "name": "Développement Back-end",
       "keywords": [
         "Flask",
         "Django",
         "Express",
         "Pyramid",
         "SQLAlchemy",
-        "Sequelize"
+        "Sequelize",
+        "JavaEE",
+        "Scipy"
       ]
     },
 
