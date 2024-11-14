@@ -4,6 +4,6 @@
     "resume-cli": "^3.1.2"
   },
   "scripts": {
-    "build": "resume export resume.html --theme stackoverflow"
+    "build": "for file in resumes/*.json; do resume export \"${file%.json}.html\" --resume \"$file\" --theme stackoverflow; done"
   }
 }

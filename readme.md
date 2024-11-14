@@ -14,7 +14,7 @@ npm install
 ## Utilisation
 
 ```bash
-resume export resume.html --theme stackoverflow
+export NAME=<exemple> && resume export --resume resumes/$NAME.json resumes$NAME.pdf --theme=stackoverflow 
 # ou
-resume export resume.pdf --theme stackoverflow
+export NAME=<exemple> && resume export --resume resumes/$NAME.json resumes/$NAME.html --theme=stackoverflow 
 ```
