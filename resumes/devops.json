@@ -111,17 +111,14 @@
       "keywords": [
         "Docker",
         "Kubernetes",
+        "Nomad/Consul",
         "Ansible",
-        "GitLab CI",
-        "Nomad",
-        "Sonarqube",
-        "Docker Compose",
         "Terraform",
-        "Github Actions",
-        "Consul",
+        "CI/CD",
         "OpenStack",
+        "Graphana",
         "Prometheus",
-        "Grafana"
+        "Sonarqube"
       ]
     },
 
@@ -131,7 +128,8 @@
         "Vue.js",
         "React Native",
         "React.js",
-        "Symfony"
+        "Symfony",
+        "Google maps API"
       ]
     },
     
@@ -140,12 +138,10 @@
       "keywords": [
         "Flask",
         "Django",
-        "Express",
         "Pyramid",
-        "SQLAlchemy",
-        "Sequelize",
+        "Express",
         "JavaEE",
-        "Scipy"
+        ".NET"
       ]
     },
 

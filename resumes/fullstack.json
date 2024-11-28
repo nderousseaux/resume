@@ -109,10 +109,10 @@
     {
       "name": "Front-end",
       "keywords": [
-        "React.js",
         "Vue.js",
+        "React Native",
+        "React.js",
         "Symfony",
-        "Tailwind CSS",
         "Google maps API"
       ]
     },
@@ -139,7 +139,7 @@
         "Flask",
         "Django",
         "Pyramid",
-        "Sequelize",
+        "Express",
         "JavaEE",
         ".NET"
       ]
