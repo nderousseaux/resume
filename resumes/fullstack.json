@@ -110,15 +110,10 @@
       "name": "Front-end",
       "keywords": [
         "React.js",
-        "React UI",
-        "Typescript",
-        "Redux",
-        "React Native",
         "Vue.js",
-        "Vuex",
         "Symfony",
         "Tailwind CSS",
-        "Google maps"
+        "Google maps API"
       ]
     },
     {
@@ -143,14 +138,10 @@
       "keywords": [
         "Flask",
         "Django",
-        "DjangoREST",
-        "Django Celery",
-        "Express",
         "Pyramid",
-        "SQLAlchemy",
         "Sequelize",
         "JavaEE",
-        "Scipy"
+        ".NET"
       ]
     },
     {
@@ -158,12 +149,11 @@
       "keywords": [
         "Docker",
         "Kubernetes",
+        "Nomad/Consul",
         "Ansible",
-        "GitLab CI",
-        "Nomad",
-        "Github Actions",
+        "CI/CD",
         "OpenStack",
-        "ESLint",
+        "Graphana",
         "Prometheus"
       ]
     },
