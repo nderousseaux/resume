@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Nathanaël Derousseaux",
-    "label": "Développeur FullStack",
+    "label": "Ingénieur Cloud",
     "image": "https://gravatar.com/avatar/561e6d4e74d7f8c5fb5b89606c4319e822d8f70856cf859a17cad0a0b2916072?s=2048",
     "email": "n.derousseaux@icloud.com",
     "phone": "+33 6 20 00 46 28",
@@ -46,7 +46,7 @@
       "summary": "D'abord en stage, puis en apprentissage, j'ai pu travailler sur le développement et création de pipelines CI/CD sécurisées pour les outils pédagogiques et administratifs pour l'IUT Robert Schuman et pour le CFAU de Mulhouse.",
       "highlights": [
         "Création complète d'une application web de relève des absences. Depuis la caractérisation des besoins du client, jusqu'aux ajustement en production, en passant par le design, le développement backend et frontend et surtout l'automatisation du déploiement sur deux serveurs (test et production).",
-        "Ajustements sur une application administrative du Centre de Formation Universitaire (CFAU) de Mulhouse. Développement de nouvelles fonctionnalités et amélioration et sécurisation de la pipeline de déploiement. Intégration d'une étape de tests automatisés avec sonarqube et déploiement automatisé sur des serveurs de test et de production."
+        "Ajustements sur une application administrative du Centre de Formation Universitaire (CFAU) de Mulhouse. Développement de nouvelles fonctionnalités et amélioration et sécurisation de la pipeline de déploiement. Intégration d'une étape de tests automatisés avec sonarqube et déploiement automatisé sur des serveurs de test et de production.\n\n\n\n"
       ]
     }
 
@@ -107,61 +107,56 @@
 
   "skills": [
     {
-      "name": "Front-end",
+      "name": "Orchestration",
+      "keywords": [
+        "Public Cloud (AWS, GCP)",
+        "Kubernetes",
+        "Nomad/Consul",
+        "CI/CD (GitLab CI, Github Action)"
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "keywords": [
+        "Haproxy",
+        "KeepAlived",
+        "Ansible",
+        "OpenStack",
+        "Infrastructure as Code"
+      ]
+    },
+    {
+      "name": "Observabilité",
+      "keywords": [
+        "Graphana",
+        "Prometheus",
+        "Sonarqube"
+      ]
+    },
+    {
+      "name": "Développement",
       "keywords": [
         "Vue.js",
-        "React Native",
-        "React.js",
-        "Symfony",
-        "Google maps API"
+        "Flask (Django/Pyramid)",
+        "API RESTFull",
+        "C/C++",
+        "Java",
+        "ShellScript",
+        "Microservices"
       ]
     },
     {
       "name": "Bases de données",
       "keywords": [
-        "Mysql",
-        "Oracle",
-        "Redis",
-        "Mongo DB"
+        "SQL (Mysql, Oracle)",
+        "MongoDB",
+        "InfluxDB"
       ]
     },
-    {
-      "name": "Cloud",
-      "keywords": [
-        "Azure",
-        "AWS",
-        "Google Cloud"
-      ]
-    },
-    {
-      "name": "Back-end",
-      "keywords": [
-        "Flask",
-        "Django",
-        "Pyramid",
-        "Express"
-      ]
-    },
-    {
-      "name": "DevOps",
-      "keywords": [
-        "Docker",
-        "Kubernetes",
-        "Nomad/Consul",
-        "Ansible",
-        "CI/CD",
-        "OpenStack",
-        "Graphana",
-        "Prometheus"
-      ]
-    },
-    
-
-
     {
       "name": "Méthodes",
       "keywords": [
-        "Agile Scrum"
+        "Agile/SCRUM"
       ]
     }
   ],
