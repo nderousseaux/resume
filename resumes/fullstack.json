@@ -2,7 +2,7 @@
   "basics": {
     "name": "Nathanaël Derousseaux",
     "label": "Développeur FullStack",
-    "image": "https://gravatar.com/avatar/561e6d4e74d7f8c5fb5b89606c4319e822d8f70856cf859a17cad0a0b2916072?s=2048",
+    "image": "https://nderousseaux.github.io/resume/fullstack/pro.jpg",
     "email": "n.derousseaux@icloud.com",
     "phone": "+33 6 20 00 46 28",
     "url": "https://nathanaelderousseaux.fr",
@@ -28,11 +28,22 @@
 
   "work": [
     {
+      "company": "CityShoot",
+      "position": "Développeur Full Stack / DevOps",
+      "startDate": "2024-11-30",
+      "endDate": "2024-12-31",
+      "summary": "CityShoot est une startup qui propose des shooting photos lors de visites de villes. J'ai été en charge de la mise à jour de l'application web, de l'intégration de nouvelles fonctionnalités et de la synchronisation avec le backend.",
+      "highlights": [
+        "Mise à jour et intégration de nouvelles fonctionnalités sur l'application web de CityShoot en next.js",
+        "Connection avec un backend Cloudinary optimisant le stockage des photos et leur partage"
+      ]
+    },
+    {
       "company": "IMT Atlantique",
-      "position": "Stagiaire chercheur sécurité blockchain",
+      "position": "Chercheur sécurité blockchain",
       "startDate": "2024-02-01",
       "endDate": "2024-08-01",
-      "summary": "Stage de recherche dans le laboratoire SOTERN d'IMT Atlantique à Rennes. Encadré par trois chercheurs. Cette expérience m'a permis d'approfondir très sérieusement mes compétences en mathématiques, notamment en probabilités, en théorie de graphes, processus de Markov et en cryptographie. Cela a aussi été l'occasion de me perfectionner en calculs scientifiques avec Scipy.",
+      "summary": "Poste de recherche dans le laboratoire SOTERN d'IMT Atlantique à Rennes. Encadré par trois chercheurs. Cette expérience m'a permis d'approfondir très sérieusement mes compétences en mathématiques, notamment en probabilités, en théorie de graphes, processus de Markov et en cryptographie. Cela a aussi été l'occasion de me perfectionner en calculs scientifiques avec Scipy.",
       "highlights": [
         "Développement d'un algorithme de compression des blockchains permettant de réduire considérablement leur taille, tout en sauvegardant leurs propriétés de sécurité. Écriture d'un article sur le sujet.",
         "Création d'un simulateur permettant de valider nos résultats théoriques."
@@ -43,7 +54,7 @@
       "position": "Développeur Full Stack / DevOps",
       "startDate": "2020-06-01",
       "endDate": "2021-09-01",
-      "summary": "D'abord en stage, puis en apprentissage, j'ai pu travailler sur le développement et création de pipelines CI/CD sécurisées pour les outils pédagogiques et administratifs pour l'IUT Robert Schuman et pour le CFAU de Mulhouse.",
+      "summary": "Au sein de l'IUT Robert Schuman, j'ai pu travailler sur le développement et création de pipelines CI/CD sécurisées pour les outils pédagogiques et administratifs pour l'IUT Robert Schuman et pour le CFAU de Mulhouse.",
       "highlights": [
         "Création complète d'une application web de relève des absences. Depuis la caractérisation des besoins du client, jusqu'aux ajustement en production, en passant par le design, le développement backend et frontend et surtout l'automatisation du déploiement sur deux serveurs (test et production).",
         "Ajustements sur une application administrative du Centre de Formation Universitaire (CFAU) de Mulhouse. Développement de nouvelles fonctionnalités et amélioration et sécurisation de la pipeline de déploiement. Intégration d'une étape de tests automatisés avec sonarqube et déploiement automatisé sur des serveurs de test et de production."
