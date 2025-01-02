@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Nathanaël Derousseaux",
-    "label": "Développeur FullStack",
+    "label": "Développeur Web Fullstack | Vue.js | Django",
     "image": "https://nderousseaux.github.io/resume/pro.jpg",
     "email": "n.derousseaux@icloud.com",
     "phone": "+33 6 20 00 46 28",
@@ -121,8 +121,9 @@
       "name": "Front-end",
       "keywords": [
         "Vue.js",
-        "React Native",
+        "next.js",
         "React.js",
+        "React Native",
         "Symfony",
         "Google maps API"
       ]
@@ -132,6 +133,7 @@
       "keywords": [
         "Mysql",
         "Oracle",
+        "PL/SQL",
         "Redis",
         "Mongo DB"
       ]
@@ -139,6 +141,8 @@
     {
       "name": "Cloud",
       "keywords": [
+        "Kubernetes",
+        "Nomad/Consul",
         "Azure",
         "AWS",
         "Google Cloud"
@@ -147,9 +151,9 @@
     {
       "name": "Back-end",
       "keywords": [
-        "Flask",
         "Django",
         "Pyramid",
+        "Flask",
         "Express"
       ]
     },
@@ -157,8 +161,6 @@
       "name": "DevOps",
       "keywords": [
         "Docker",
-        "Kubernetes",
-        "Nomad/Consul",
         "Ansible",
         "CI/CD",
         "OpenStack",

@@ -4,7 +4,7 @@
     "resume-cli": "^3.1.2"
   },
   "scripts": {
-    "build": "for file in resumes/*.json; do resume export \"${file%.json}.html\" --resume \"$file\" --theme stackoverflow; done",
+    "html": "for file in resumes/*.json; do resume export \"${file%.json}.html\" --resume \"$file\" --theme stackoverflow; done",
     "pdf": "for file in resumes/*.json; do resume export \"${file%.json}.pdf\" --resume \"$file\" --theme stackoverflow; done"
   }
 }
