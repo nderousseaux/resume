@@ -43,7 +43,7 @@ jobs:
         run: npm install
       
       - name: Build resume
-        run: npm run build
+        run: npm run html
 
       - name: Create artifact
         run: mkdir -p artifact && mv resumes/* artifact/ && mv public/* artifact/
