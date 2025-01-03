@@ -32,10 +32,10 @@
       "position": "Développeur Full Stack / DevOps",
       "startDate": "2024-11-30",
       "endDate": "2024-12-31",
-      "summary": "CityShoot est une startup qui propose des shooting photos lors de visites de villes. J'ai été en charge de la mise à jour de l'application web, de l'intégration de nouvelles fonctionnalités et de la synchronisation avec le backend.",
+      "summary": "Mise à jour de l'application web, intégration de nouvelles fonctionnalités et synchronisation avec le backend.",
       "highlights": [
-        "Mise à jour et intégration de nouvelles fonctionnalités sur l'application web de CityShoot en next.js",
-        "Connection avec un backend Cloudinary optimisant le stockage des photos et leur partage"
+        "Mise à jour et intégration de nouvelles fonctionnalités sur l'application web de CityShoot en Next.js.",
+        "Connexion avec un backend Cloudinary optimisant le stockage des photos et leur partage."
       ]
     },
     {
@@ -43,10 +43,10 @@
       "position": "Chercheur sécurité blockchain",
       "startDate": "2024-02-01",
       "endDate": "2024-08-01",
-      "summary": "Poste de recherche dans le laboratoire SOTERN d'IMT Atlantique à Rennes. Encadré par trois chercheurs. Cette expérience m'a permis d'approfondir très sérieusement mes compétences en mathématiques, notamment en probabilités, en théorie de graphes, processus de Markov et en cryptographie. Cela a aussi été l'occasion de me perfectionner en calculs scientifiques avec Scipy.",
+      "summary": "Travail de recherche dans le laboratoire SOTERN d'IMT Atlantique à Rennes. Travail très axé sur les mathématiques, notamment en probabilités, en théorie de graphes, processus de Markov et en cryptographie.",
       "highlights": [
         "Développement d'un algorithme de compression des blockchains permettant de réduire considérablement leur taille, tout en sauvegardant leurs propriétés de sécurité. Écriture d'un article sur le sujet.",
-        "Création d'un simulateur permettant de valider nos résultats théoriques."
+        "Création d'un simulateur permettant de valider les résultats théoriques avec Scipy."
       ]
     },
     {
@@ -54,7 +54,7 @@
       "position": "Développeur Full Stack / DevOps",
       "startDate": "2020-06-01",
       "endDate": "2021-09-01",
-      "summary": "Au sein de l'IUT Robert Schuman, j'ai pu travailler sur le développement et création de pipelines CI/CD sécurisées pour les outils pédagogiques et administratifs pour l'IUT Robert Schuman et pour le CFAU de Mulhouse.",
+      "summary": "Développement Web Django/Vue.js et création de pipelines CI/CD sécurisées pour les outils pédagogiques et administratifs pour l'IUT Robert Schuman et pour le CFAU de Mulhouse.",
       "highlights": [
         "Création complète d'une application web de relève des absences. Depuis la caractérisation des besoins du client, jusqu'aux ajustement en production, en passant par le design, le développement backend et frontend et surtout l'automatisation du déploiement sur deux serveurs (test et production).",
         "Ajustements sur une application administrative du Centre de Formation Universitaire (CFAU) de Mulhouse. Développement de nouvelles fonctionnalités et amélioration et sécurisation de la pipeline de déploiement. Intégration d'une étape de tests automatisés avec sonarqube et déploiement automatisé sur des serveurs de test et de production."
@@ -69,10 +69,10 @@
     "position": "Développeur Web",
     "startDate": "2021-01-01",
     "endDate": "2021-02-01",
-    "summary": "Eiko est une association ayant pour but la création d'outils digitaux pour permettre au citoyen de diminuer facilement son empreinte écologique. En collaboration avec l'association I-Boycott.",
+    "summary": "Participation à un projet visant à aider les citoyens à réduire leur empreinte écologique, en collaboration avec l'association I-Boycott.",
     "highlights": [
-      "Intégration dans une équipe de développement d'une extension web permettant d'avertir le consommateur d'éventuels boycotts en cours sur un produit.",
-      "Ajout de fonctionnalités sur l'extension, amélioration de la pipeline de test, avec sonarqube et eslint."
+      "Intégration dans une équipe de développement pour créer une extension avertissant les consommateurs des boycotts en cours sur un produit.",
+      "Ajout de nouvelles fonctionnalités, optimisation de la pipeline de tests avec SonarQube et ESLint."
     ]
   }],
 
@@ -121,7 +121,7 @@
       "name": "Front-end",
       "keywords": [
         "Vue.js",
-        "next.js",
+        "Next.js",
         "React.js",
         "React Native",
         "Symfony",
@@ -143,6 +143,7 @@
       "keywords": [
         "Kubernetes",
         "Nomad/Consul",
+        "OpenStack",
         "Azure",
         "AWS",
         "Google Cloud"
@@ -163,7 +164,6 @@
         "Docker",
         "Ansible",
         "CI/CD",
-        "OpenStack",
         "Graphana",
         "Prometheus"
       ]
@@ -239,7 +239,15 @@
       "summary": "Projet personnel ayant pour but de placer une liste d'entreprises sur une carte. Durant ce projet, j'ai utilisé les API google Maps pour convertir des adresses en position sur une carte. J'ai aussi mis en place une pipeline CI/CD en serverless avec Google Cloud Plateform et Github Action.",
       "url": "https://github.com/nderousseaux/internmap"
     }
-  ]
+  ],
+
+
+  "certificates": [{
+    "name": "Kubernetes",
+    "date": "2024-12-31",
+    "issuer": "LinuxFoundationX",
+    "url": "https://learning.edx.org/course/course-v1:LinuxFoundationX+LFS158x+1T2024/home"
+  }]
 
 
 }
