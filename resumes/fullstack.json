@@ -241,6 +241,11 @@
     }
   ],
 
+  "references": [{
+    "name": "Maxime Buscaylet",
+    "reference": "J'ai eu le plaisir de collaborer avec Nathanaël dans un environnement technique complexe, où il s'est occupé de la partie développement web en Django et Vue.js. Nathanaël a fait preuve d'une grande expertise technique en résolvant rapidement les problèmes complexes auxquels il a été confronté. Il s'est également distingué par une communication fluide et une attention particulière à la compréhension des besoins du client. Sa rigueur dans les détails et sa capacité à respecter les délais font de lui un collaborateur fiable et efficace !"
+  }],
+
 
   "certificates": [{
     "name": "Kubernetes",
