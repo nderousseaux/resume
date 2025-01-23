@@ -1,10 +1,26 @@
 {
-  "dependencies": {
-    "jsonresume-theme-stackoverflow": "https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french.git",
-    "resume-cli": "^3.1.2"
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Il s'agit de mon CV en ligne. Réalisé avec express et JSON Resume.",
+  "homepage": "https://github.com/nderousseaux/resume#readme",
+  "bugs": {
+    "url": "https://github.com/nderousseaux/resume/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nderousseaux/resume.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
   "scripts": {
-    "html": "for file in resumes/*.json; do resume export \"${file%.json}.html\" --resume \"$file\" --theme stackoverflow; done",
-    "pdf": "for file in resumes/*.json; do resume export \"${file%.json}.pdf\" --resume \"$file\" --theme stackoverflow; done"
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "resume-cli": "^3.0.8",
+    "jsonresume-theme-stackoverflow": "https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french.git"
   }
 }
