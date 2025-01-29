@@ -1,26 +1,28 @@
 {
   "name": "resume",
   "version": "1.0.0",
-  "description": "Il s'agit de mon CV en ligne. Réalisé avec express et JSON Resume.",
-  "homepage": "https://github.com/nderousseaux/resume#readme",
-  "bugs": {
-    "url": "https://github.com/nderousseaux/resume/issues"
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nderousseaux/resume.git"
   },
-  "license": "ISC",
+  "keywords": [],
   "author": "",
+  "license": "ISC",
   "type": "commonjs",
-  "main": "app.js",
-  "scripts": {
-    "dev": "nodemon app.js"
+  "bugs": {
+    "url": "https://github.com/nderousseaux/resume/issues"
   },
+  "homepage": "https://github.com/nderousseaux/resume#readme",
+  "description": "",
   "dependencies": {
-    "express": "^4.21.2",
-    "nodemon": "^3.1.9",
-    "resume-cli": "^3.0.8",
-    "jsonresume-theme-stackoverflow": "https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french.git"
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
