@@ -20,7 +20,8 @@
   "homepage": "https://github.com/nderousseaux/resume#readme",
   "description": "",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "jsonresume-theme-stackoverflow": "https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french.git"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
