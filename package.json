@@ -10,9 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/nderousseaux/resume.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["resume", "jsonresume", "jsonresume-theme-stackoverflow", "express"],
+  "author": "Nathanaël Derousseaux",
+  "license": "MIT",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/nderousseaux/resume/issues"
