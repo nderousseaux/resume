@@ -1,11 +1,13 @@
 const express = require('express');
 const theme = require("jsonresume-theme-stackoverflow");
-const file = require('../resume.json');
+
+const json_builder = require('./json-builder');
 
 const app = express()
 
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
+  let file = await json_builder();
   res.send(theme.render(file));
 })
 
