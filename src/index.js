@@ -14,7 +14,7 @@ app.get('/', async (req, res) => {
 
 app.get('/picture.jpg', async (req, res) => {
   let picture = await image();
-  res.setHeader('Content-Type', 'image/png');
+  res.setHeader('Content-Type', 'image/jpg');
   res.send(picture);
 })
 
