@@ -1,4 +1,4 @@
-fields = require('./fields');
+const fields = require('./fields');
 
 function remove_empty(obj) {
 	Object.keys(obj).forEach(key => {
@@ -12,6 +12,15 @@ function remove_empty(obj) {
 async function json_builder() {
 	let res = {
 		basics: await fields.basics(),
+		skills: await fields.skills(),
+		work: await fields.works(),
+		projects: await fields.projects(),
+		volunteer: await fields.volunteers(),
+		education: await fields.educations(),
+		certificates: await fields.certificates(),
+		languages: await fields.languages(),
+		interests: await fields.interests(),
+		references: await fields.references()
 	}
 
 	// if a field is empty, remove it from the JSON object, recursively

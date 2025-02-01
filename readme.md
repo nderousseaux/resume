@@ -6,7 +6,7 @@
 	<img src="https://cv.nderousseaux.fr/picture.jpg" alt="Icon of the project" width="150" style="border-radius: 50%" />
 </p>
 
-# <div align="center">My resume
+# <div align="center">My resume</div>
 <div align="center">
 	<samp>My resume, and some tools related to it.</samp>
 </div>
@@ -26,10 +26,10 @@ $ npm install
 $ mv .env.example .env
 ```
 
-Fill the `.env` file with your own values. Then, init the database with the `init.sql` file :
+Fill the `.env` file with your own values. Then, init the database with the `struct.sql` file :
 
 ```bash
-$ plsql -U <user> -d <database> -f init.sql
+$ plsql -U <user> -d <database> -f struct.sql
 ```
 
 And finally, fill the database with your own data.
