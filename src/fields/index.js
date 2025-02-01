@@ -1,3 +1,5 @@
 module.exports = {
-	basics: require('./basics')
+	basics: require('./basics'),
+	image: require('./image'),
+	
 }
