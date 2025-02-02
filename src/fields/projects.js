@@ -8,8 +8,8 @@ async function projects() {
 		return {
 			"name": project.name,
 			"summary": project.summary,
-			"startDate": project.startDate,
-			"endDate": project.endDate,
+			"startDate": project.startDate.toISOString().split('T')[0],
+			"endDate": project.endDate.toISOString().split('T')[0],
 			"url": project.url,
 		};
 	})
