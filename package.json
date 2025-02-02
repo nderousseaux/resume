@@ -31,7 +31,8 @@
     "jsonresume-theme-stackoverflow": "https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french.git",
     "pg": "^8.13.1",
     "puppeteer": "^16.1.0",
-    "stream-to-string": "^1.2.1"
+    "stream-to-string": "^1.2.1",
+    "chromium": "^96.0.4664.45"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

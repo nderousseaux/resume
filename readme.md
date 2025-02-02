@@ -23,13 +23,30 @@ The deployment is done via vercel.
 
 ## 📚 Features
 
-- `GET /` : Get the resume in the html format. (`curl https://cv.nderousseaux.fr > resume.html`)
-- `GET /pdf` : Get the resume in the pdf format. (`curl https://cv.nderousseaux.fr/pdf > resume.pdf`)
-- `GET /json` : Get the resume in the json format. (`curl https://cv.nderousseaux.fr/json > resume.json`)
+- `GET /` : Get the resume in the html format.
+- `GET /pdf` : Get the resume in the pdf format.
+- `GET /json` : Get the resume in the json format.
 
 You can also use it for build your own resume :
-- `POST /`: Post a json resume, and get the html resume. (`curl -X POST -H "Content-Type: application/json" -d @resume.json https://cv.nderousseaux.fr > resume.html`)
-- `POST /pdf`: Post a json resume, and get the pdf resume. (`curl -X POST -H "Content-Type: application/json" -d @resume.json https://cv.nderousseaux.fr/pdf > resume.pdf`)
+- `POST /`: Post a json resume, and get the html resume. 
+- `POST /pdf`: Post a json resume, and get the pdf resume.
+
+Here some cheatsheet for the api :
+```bash
+# GET /
+$ curl https://cv.nderousseaux.fr > resume.html
+# GET /pdf
+$ curl https://cv.nderousseaux.fr/pdf > resume.pdf
+# GET /json
+$ curl https://cv.nderousseaux.fr/json > resume.json
+
+# POST /
+$ curl -X POST -H "Content-Type: application/json" -d @resume.json https://cv.nderousseaux.fr > resume.html
+# POST /pdf
+$ curl -X POST -H "Content-Type: application/json" -d @resume.json https://cv.nderousseaux.fr/pdf > resume.pdf
+```
+
+If you want to see the schema of the json resume, you can see at the [jsonresume.org](https://jsonresume.org) project.
 
 ## 🛠️ Installation, development and deployment
 
