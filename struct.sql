@@ -4,7 +4,7 @@
 -- https://tableplus.com/
 --
 -- Database: neondb
--- Generation Time: 2025-02-01 22:40:15.1030
+-- Generation Time: 2025-02-02 14:57:44.4080
 -- -------------------------------------------------------------
 
 
@@ -95,6 +95,7 @@ CREATE SEQUENCE IF NOT EXISTS hobbie_category_id_seq;
 CREATE TABLE "public"."interest_category" (
     "id" int4 NOT NULL DEFAULT nextval('hobbie_category_id_seq'::regclass),
     "name" varchar(255) NOT NULL,
+    "order" int4,
     PRIMARY KEY ("id")
 );
 
@@ -196,6 +197,7 @@ CREATE SEQUENCE IF NOT EXISTS skills_category_id_seq;
 CREATE TABLE "public"."skill_category" (
     "id" int4 NOT NULL DEFAULT nextval('skills_category_id_seq'::regclass),
     "name" varchar(255) NOT NULL,
+    "order" int4,
     PRIMARY KEY ("id")
 );
 
