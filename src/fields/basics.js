@@ -1,3 +1,6 @@
+const dotenv = require("dotenv")
+dotenv.config();
+
 const db = require('../db.js');
 
 // Get the value of a basic table by its name
@@ -27,7 +30,7 @@ async function basics() {
 	return object = {
 		"name": `${get_by_name(ba, 'name')} ${get_by_name(ba, 'lastname')}`,
 		"label": get_by_name(ba, 'label'),
-		"image": "picture.jpg",
+		"image": `${process.env.HOST}/picture.jpg`,
 		"email": get_by_name(ba, 'email'),
 		"phone": get_by_name(ba, 'phone'),
 		"website": get_by_name(ba, 'website'),

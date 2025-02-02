@@ -23,12 +23,15 @@
     "url": "https://github.com/nderousseaux/resume/issues"
   },
   "homepage": "https://github.com/nderousseaux/resume#readme",
-  "description": "",
+  "description": "My resume, and some tools related to it.",
   "dependencies": {
+    "btoa": "^1.2.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonresume-theme-stackoverflow": "https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french.git",
-    "pg": "^8.13.1"
+    "pg": "^8.13.1",
+    "puppeteer": "^16.1.0",
+    "stream-to-string": "^1.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

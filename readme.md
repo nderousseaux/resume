@@ -24,6 +24,7 @@ The deployment is done via vercel.
 ## 📚 Features
 
 - `GET /` : Get the resume in the html format.
+- `GET /pdf` : Get the resume in the pdf format.
 
 ## 🛠️ Installation, development and deployment
 
