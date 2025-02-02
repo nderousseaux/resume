@@ -14,9 +14,11 @@
 <hr>
 
 ## ℹ️ About
-This is my online resume. Made with express, [json-resume](https://jsonresume.org) and [my french version of the stackoverflow theme](https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french).
+This is my online resume. Made with express, [json-resume](https://jsonresume.org) and [my french version of the stackoverflow theme](https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french). 
 
 The deployment is done via vercel.
+		 
+<img src="docs/screenshot.png" alt="screenshot" height="400" />
 
 ## 🛠️ Installation, development and deployment
 
