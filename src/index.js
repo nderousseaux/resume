@@ -4,6 +4,8 @@ const json_builder = require('./json-builder');
 
 const app = express()
 
+app.use(express.json());
+
 const { image } = require('./fields');
 
 const createPdf = require('./html-pdf');
@@ -21,6 +23,7 @@ app.get('/pdf', async (req, res) => {
   pdf = Buffer.from(pdf, 'base64');
 
   res.setHeader('Content-Type', 'application/pdf');
+  res.setHeader('Content-Disposition', 'attachment; filename="resume.pdf"');
   res.send(pdf);
 })
 
@@ -30,10 +33,26 @@ app.get('/picture.jpg', async (req, res) => {
   res.send(picture);
 })
 
+
+app.post('/' , async (req, res) => {
+  res.send(theme.render(req.body));
+})
+
 app.get('/json', async (req, res) => {
   let json = await json_builder();
   res.setHeader('Content-Type', 'application/json');
-  res.send(json);
+  res.send(JSON.stringify(json, null, 2));
+})
+
+app.post('/pdf', async (req, res) => {
+  let pdf = await createPdf(req.body, 'resume', 'jsonresume-theme-stackoverflow', '.pdf');
+
+  pdf = Buffer.from(pdf, 'base64');
+
+  res.setHeader('Content-Type', 'application/pdf');
+  res.setHeader('Content-Disposition', 'attachment; filename="resume.pdf"');
+  // Save to file
+  res.send(pdf);
 })
 
 module.exports = app

@@ -25,7 +25,6 @@ async function createPdf(resumeJson, fileName, theme, format) {
   }
 
   let pdf = await page.pdf({
-    path: fileName + format,
     format: 'Letter',
     printBackground: true,
     ...themePkg.pdfRenderOptions

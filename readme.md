@@ -23,8 +23,13 @@ The deployment is done via vercel.
 
 ## 📚 Features
 
-- `GET /` : Get the resume in the html format.
-- `GET /pdf` : Get the resume in the pdf format.
+- `GET /` : Get the resume in the html format. (`curl https://cv.nderousseaux.fr > resume.html`)
+- `GET /pdf` : Get the resume in the pdf format. (`curl https://cv.nderousseaux.fr/pdf > resume.pdf`)
+- `GET /json` : Get the resume in the json format. (`curl https://cv.nderousseaux.fr/json > resume.json`)
+
+You can also use it for build your own resume :
+- `POST /`: Post a json resume, and get the html resume. (`curl -X POST -H "Content-Type: application/json" -d @resume.json https://cv.nderousseaux.fr > resume.html`)
+- `POST /pdf`: Post a json resume, and get the pdf resume. (`curl -X POST -H "Content-Type: application/json" -d @resume.json https://cv.nderousseaux.fr/pdf > resume.pdf`)
 
 ## 🛠️ Installation, development and deployment
 
