@@ -6,6 +6,9 @@
     "dev": "nodemon app.js",
     "start": "node app.js"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nderousseaux/resume.git"
@@ -30,11 +33,12 @@
     "express": "^4.21.2",
     "jsonresume-theme-stackoverflow": "https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french.git",
     "pg": "^8.13.1",
-    "puppeteer": "^16.1.0",
-    "stream-to-string": "^1.2.1",
-    "chromium": "^96.0.4664.45"
+
+    "@sparticuz/chromium": "^119.0.0",
+    "puppeteer-core": "16.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "puppeteer": "^16.1.0"
   }
 }

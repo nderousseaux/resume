@@ -18,7 +18,7 @@ app.get('/', async (req, res) => {
 app.get('/pdf', async (req, res) => {
   let file = await json_builder();
 
-  let pdf = await createPdf(file, 'resume', 'jsonresume-theme-stackoverflow', '.pdf');
+  let pdf = await createPdf(file, 'jsonresume-theme-stackoverflow');
 
   pdf = Buffer.from(pdf, 'base64');
 
@@ -45,7 +45,7 @@ app.get('/json', async (req, res) => {
 })
 
 app.post('/pdf', async (req, res) => {
-  let pdf = await createPdf(req.body, 'resume', 'jsonresume-theme-stackoverflow', '.pdf');
+  let pdf = await createPdf(req.body, 'jsonresume-theme-stackoverflow');
 
   pdf = Buffer.from(pdf, 'base64');
 
