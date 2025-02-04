@@ -4,7 +4,9 @@ const db = require('../db.js');
 async function works() {
 	let w = (await db.query('SELECT * FROM experience WHERE type LIKE \'%work%\'')).rows;
 	let h = (await db.query('SELECT * FROM highlight')).rows;
-
+	w = w.sort((a, b) => {
+		return b.endDate - a.endDate;
+	});
 	return w.map(work => {
 		return {
 			"company": work.company,

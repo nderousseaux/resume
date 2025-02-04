@@ -15,6 +15,7 @@ async function createPdf(resumeJson, theme) {
     '-–disable-dev-shm-usage',
     '-–no-first-run',
     '--no-sandbox',
+    '--single-process',
     '--disable-web-security',
     '--ignore-certificate-errors',
     '--disable-font-subpixel-positioning',

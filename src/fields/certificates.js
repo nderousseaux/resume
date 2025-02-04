@@ -3,7 +3,9 @@ const db = require('../db.js');
 // Create "certificates" JSON object for JSON resume
 async function certificates() {
 	let c = (await db.query('SELECT * FROM certificate')).rows;
-
+	c.sort((a, b) => {
+		return b.date - a.date;
+	});
 	return c.map(certificate => {
 		return {
 			"name": certificate.name,

@@ -20,11 +20,10 @@ app.get('/pdf', async (req, res) => {
 
   let pdf = await createPdf(file, 'jsonresume-theme-stackoverflow');
 
-
+  filename = "resume.pdf";
+  res.setHeader('Content-Disposition', 'inline; filename="' + filename + '"');
   res.setHeader('Content-Type', 'application/pdf');
-  res.setHeader('Content-Disposition', 'attachment; filename="resume.pdf"');
-
-  res.send(pdf);
+  return res.send(pdf);
 })
 
 app.get('/picture.jpg', async (req, res) => {
@@ -49,10 +48,10 @@ app.post('/pdf', async (req, res) => {
 
   pdf = Buffer.from(pdf, 'base64');
 
+  filename = "resume.pdf";
+  res.setHeader('Content-Disposition', 'inline; filename="' + filename + '"');
   res.setHeader('Content-Type', 'application/pdf');
-  res.setHeader('Content-Disposition', 'attachment; filename="resume.pdf"');
-  // Save to file
-  res.send(pdf);
+  return res.send(pdf);
 })
 
 module.exports = app

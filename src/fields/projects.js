@@ -3,7 +3,9 @@ const db = require('../db.js');
 // Create "projects" JSON object for JSON resume
 async function projects() {
 	let p = (await db.query('SELECT * FROM project')).rows;
-
+	p.sort((a, b) => {
+		return b.endDate - a.endDate;
+	});
 	return p.map(project => {
 		return {
 			"name": project.name,
