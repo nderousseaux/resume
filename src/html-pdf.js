@@ -11,9 +11,14 @@ async function createPdf(resumeJson, theme) {
 
   let browser;
   let args = [      
-    '--single-process',
+    '–-disable-gpu',
+    '-–disable-dev-shm-usage',
+    '-–no-first-run',
     '--no-sandbox',
-    '--disable-web-security'
+    '--disable-web-security',
+    '--ignore-certificate-errors',
+    '--disable-font-subpixel-positioning',
+    '--font-render-hinting=none',
   ]
   if (process.env.NODE_ENV === 'production') {
     let puppeteerCore =  require("puppeteer-core");
@@ -35,6 +40,7 @@ async function createPdf(resumeJson, theme) {
   }
   
   const page = await browser.newPage();
+  await page.setUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36");
   await page.emulateMediaType(themePkg.pdfRenderOptions && themePkg.pdfRenderOptions.mediaType || 'screen');
   
   
@@ -43,8 +49,13 @@ async function createPdf(resumeJson, theme) {
   });
   await page.addStyleTag({
     content: `
-      html {
-        font-family: Arial !important;
+      * {
+        -webkit-print-color-adjust: exact !important;
+        text-rendering: geometricprecision !important;
+        -webkit-font-smoothing: antialiased !important;
+        -webkit-box-sizing: border-box !important;
+        -moz-box-sizing: border-box !important;
+        box-sizing: border-box !important;
       }
       @page {
         margin: 0.8cm;
@@ -60,13 +71,14 @@ async function createPdf(resumeJson, theme) {
   if (themePkg.pdfViewport) {
     await page.setViewport(themePkg.pdfViewport);
   }
-
+  
   let res = await page.pdf(
     {
       printBackground: true,
       format: 'Letter',
       preferCSSPageSize: true
     }
+  );
     // {
   //   // format: 'Letter',
   //   // size: 'Letter',
@@ -74,7 +86,7 @@ async function createPdf(resumeJson, theme) {
   //   // printBackground: true,
   //   // ...themePkg.pdfRenderOptions
   // }
-);
+// );
 
 
 
