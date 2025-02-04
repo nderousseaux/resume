@@ -27,7 +27,7 @@ async function profiles() {
 async function basics() {
 	let ba = (await db.query('SELECT * FROM basic')).rows;
 
-	return object = {
+	return {
 		"name": `${get_by_name(ba, 'name')} ${get_by_name(ba, 'lastname')}`,
 		"label": get_by_name(ba, 'label'),
 		"image": `${process.env.HOST}/picture.jpg`,

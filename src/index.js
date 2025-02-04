@@ -20,10 +20,10 @@ app.get('/pdf', async (req, res) => {
 
   let pdf = await createPdf(file, 'jsonresume-theme-stackoverflow');
 
-  pdf = Buffer.from(pdf, 'base64');
 
   res.setHeader('Content-Type', 'application/pdf');
   res.setHeader('Content-Disposition', 'attachment; filename="resume.pdf"');
+
   res.send(pdf);
 })
 
