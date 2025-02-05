@@ -4,7 +4,7 @@
 -- https://tableplus.com/
 --
 -- Database: neondb
--- Generation Time: 2025-02-05 16:15:17.5320
+-- Generation Time: 2025-02-05 22:29:21.9470
 -- -------------------------------------------------------------
 
 
@@ -50,10 +50,13 @@ CREATE TABLE "public"."experience" (
     "company" varchar(255) NOT NULL,
     "position" varchar(255) NOT NULL,
     "summary" varchar(2048) NOT NULL,
-    "startDate" date NOT NULL,
-    "endDate" date,
     "type" varchar(255),
     "contract" varchar(255),
+    "website" varchar(255),
+    "url" varchar(255),
+    "location" varchar(255),
+    "startDate" date NOT NULL,
+    "endDate" date,
     PRIMARY KEY ("id")
 );
 
@@ -68,6 +71,7 @@ CREATE TABLE "public"."highlight" (
     "id" int4 NOT NULL DEFAULT nextval('highlight_id_seq'::regclass),
     "text" varchar(2048) NOT NULL,
     "experience" int4,
+    "order" int4,
     PRIMARY KEY ("id")
 );
 
