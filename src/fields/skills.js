@@ -1,6 +1,6 @@
 const db = require('../utils/db.js');
 
-const SKILLS_QUERY = `SELECT * FROM skill`;
+const SKILLS_QUERY = `SELECT * FROM skill ORDER BY "order"`;
 const SKILL_CATEGORIES_QUERY = `SELECT * FROM skill_category ORDER BY "order"`;
 
 

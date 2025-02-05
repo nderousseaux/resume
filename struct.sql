@@ -4,7 +4,7 @@
 -- https://tableplus.com/
 --
 -- Database: neondb
--- Generation Time: 2025-02-05 14:18:28.0180
+-- Generation Time: 2025-02-05 16:15:17.5320
 -- -------------------------------------------------------------
 
 
@@ -184,6 +184,7 @@ CREATE TABLE "public"."skill" (
     "id" int4 NOT NULL DEFAULT nextval('skill_id_seq'::regclass),
     "name" varchar(255) NOT NULL,
     "category" int4,
+    "order" int4,
     PRIMARY KEY ("id")
 );
 
