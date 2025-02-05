@@ -28,17 +28,16 @@
   "homepage": "https://github.com/nderousseaux/resume#readme",
   "description": "My resume, and some tools related to it.",
   "dependencies": {
+    "@sparticuz/chromium": "^119.0.0",
     "btoa": "^1.2.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonresume-theme-stackoverflow": "https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french.git",
     "pg": "^8.13.1",
-
-    "@sparticuz/chromium": "^119.0.0",
     "puppeteer-core": "16.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15",
+    "nodemon": "^2.0.22",
     "puppeteer": "^16.1.0"
   }
 }

@@ -1,46 +1,50 @@
 const dotenv = require("dotenv")
 dotenv.config();
 
-const db = require('../db.js');
+const db = require('../utils/db');
+
+const PROFILES_QUERY = 'SELECT * FROM profile';
+const BASICS_QUERY = 'SELECT * FROM basic';
 
 // Get the value of a basic table by its name
-function get_by_name(basics, name) {
-	return basics.find(basic => basic.name == name).value;
+function getByName(basics, name) {
+	return basics.find(b => b.name == name).value;
 }
 
 
 // Create "profiles" JSON object for JSON resume
-async function profiles() {
-	let profiles = (await db.query('SELECT * FROM profile')).rows;
+async function getProfiles() {
+	let profiles = (await db.query(PROFILES_QUERY)).rows;
 
-	return profiles.map(profile => {
+	return profiles.map(p => {
 		return {
-			"network": profile.network,
-			"username": profile.username,
-			"url": profile.url
+			"network": p.network,
+			"username": p.username,
+			"url": p.url
 		};
 	});
 }
 
 
 // Create "basics" JSON object for JSON resume
-async function basics() {
-	let ba = (await db.query('SELECT * FROM basic')).rows;
+async function getBasics() {
+	let b = (await db.query(BASICS_QUERY)).rows;
 
 	return {
-		"name": `${get_by_name(ba, 'name')} ${get_by_name(ba, 'lastname')}`,
-		"label": get_by_name(ba, 'label'),
+		"name": `${getByName(b, 'name')} ${getByName(b, 'lastname')}`,
+		"label": getByName(b, 'label'),
 		"image": `${process.env.HOST}/picture.jpg`,
-		"email": get_by_name(ba, 'email'),
-		"phone": get_by_name(ba, 'phone'),
-		"website": get_by_name(ba, 'website'),
+		"email": getByName(b, 'email'),
+		"phone": getByName(b, 'phone'),
+		"website": getByName(b, 'website'),
 		"location": {
-      "postalCode": get_by_name(ba, 'postalCode'),
-      "city": get_by_name(ba, 'city'),
-      "region": get_by_name(ba, 'region'),
+      "postalCode": getByName(b, 'postalCode'),
+      "city": getByName(b, 'city'),
+      "region": getByName(b, 'region'),
     },
-		"profiles": await profiles()
+		"profiles": await getProfiles()
 	};
 }
 
-module.exports = basics;
+
+module.exports = getBasics;

@@ -1,16 +1,21 @@
-const db = require('../db.js');
+const db = require('../utils/db.js');
+
+const INTERESTS_QUERY = 'SELECT * FROM interest';
+const INTERESTS_CATEGORY_QUERY = 'SELECT * FROM interest_category ORDER BY "order"';
+
 
 // Create "interests" JSON object for JSON resume
-async function interests() {
-	let i = (await db.query('SELECT * FROM interest')).rows;
-	let c = (await db.query('SELECT * FROM interest_category')).rows;
+async function getInterests() {
+	let interests = (await db.query(INTERESTS_QUERY)).rows;
+	let categories = (await db.query(INTERESTS_CATEGORY_QUERY)).rows;
 
-	return c.sort((a, b) => a.order - b.order).map(category => {
+	return categories.map(c => {
 		return {
-			"name": category.name,
-			"keywords": i.filter(interest => interest.category === category.id).map(interest => interest.name)
+			"name": c.name,
+			"keywords": interests.filter(i => i.category === c.id)
+				.map(i => i.name)
 		};
 	})
 }
 
-module.exports = interests;
+module.exports = getInterests;

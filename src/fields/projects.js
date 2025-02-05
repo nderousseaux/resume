@@ -1,20 +1,21 @@
-const db = require('../db.js');
+const db = require('../utils/db');
+
+const PROJECTS_QUERY = 'SELECT * FROM project ORDER BY "endDate" DESC';
+
 
 // Create "projects" JSON object for JSON resume
-async function projects() {
-	let p = (await db.query('SELECT * FROM project')).rows;
-	p.sort((a, b) => {
-		return b.endDate - a.endDate;
-	});
-	return p.map(project => {
+async function getProjects() {
+	let projects = (await db.query(PROJECTS_QUERY)).rows;
+	
+	return projects.map(p => {
 		return {
-			"name": project.name,
-			"summary": project.summary,
-			"startDate": project.startDate.toISOString().split('T')[0],
-			"endDate": project.endDate.toISOString().split('T')[0],
-			"url": project.url,
+			"name": p.name,
+			"summary": p.summary,
+			"startDate": p.startDate.toISOString().split('T')[0],
+			"endDate": p.endDate.toISOString().split('T')[0],
+			"url": p.url,
 		};
 	})
 }
 
-module.exports = projects;
+module.exports = getProjects;

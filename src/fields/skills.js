@@ -1,17 +1,21 @@
-const db = require('../db.js');
+const db = require('../utils/db.js');
+
+const SKILLS_QUERY = `SELECT * FROM skill`;
+const SKILL_CATEGORIES_QUERY = `SELECT * FROM skill_category ORDER BY "order"`;
+
 
 // Create "skills" JSON object for JSON resume
-async function skills() {
-	let s = (await db.query('SELECT * FROM skill')).rows;
-	let c = (await db.query('SELECT * FROM skill_category')).rows;
+async function getSkills() {
+	let skills = (await db.query(SKILLS_QUERY)).rows;
+	let categories = (await db.query(SKILL_CATEGORIES_QUERY)).rows;
 
-	return c.sort((a, b) => a.order - b.order).map(category => {
-		let skills = s.filter(skill => skill.category === category.id);
+	return categories.map(c => {
+		let category_skills = skills.filter(s => s.category === c.id);
 		return {
-			"name": category.name,
-			"keywords": skills.map(skill => skill.name)
+			"name": c.name,
+			"keywords": category_skills.map(s => s.name)
 		}
 	});
 }
 
-module.exports = skills;
+module.exports = getSkills;

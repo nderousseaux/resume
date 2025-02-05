@@ -1,7 +1,6 @@
-
 module.exports = {
 	basics: require('./basics'),
-	image: require('./image'),
+	profilePicture: require('./profile-picture'),
 	skills: require('./skills'),
 	works: require('./works'),
 	projects: require('./projects'),

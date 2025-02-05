@@ -1,16 +1,11 @@
 const fields = require('./fields');
 
-function remove_empty(obj) {
-	Object.keys(obj).forEach(key => {
-		if (obj[key] && typeof obj[key] === 'object') remove_empty(obj[key]);
-		else if (obj[key] == null) delete obj[key];
-	});
-	return obj;
-}
+const { remove_empty_fields } = require('./utils');
+
 
 // Create JSON object for JSON resume from bdd
-async function json_builder() {
-	let res = {
+async function getJsonFromBDD() {
+	return remove_empty_fields({
 		basics: await fields.basics(),
 		skills: await fields.skills(),
 		work: await fields.works(),
@@ -21,13 +16,10 @@ async function json_builder() {
 		languages: await fields.languages(),
 		interests: await fields.interests(),
 		references: await fields.references()
-	}
-
-	// if a field is empty, remove it from the JSON object, recursively
-	remove_empty(res);
-
-	return res;
+	});
 }	
 
 
-module.exports = json_builder;
+module.exports = {
+	getJsonFromBDD
+}

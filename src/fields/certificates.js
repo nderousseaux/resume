@@ -1,19 +1,20 @@
-const db = require('../db.js');
+const db = require('../utils/db.js');
+
+const CERTIFICATES_QUERY = 'SELECT * FROM certificate ORDER BY "date" DESC';
+
 
 // Create "certificates" JSON object for JSON resume
-async function certificates() {
-	let c = (await db.query('SELECT * FROM certificate')).rows;
-	c.sort((a, b) => {
-		return b.date - a.date;
-	});
-	return c.map(certificate => {
+async function getCertificates() {
+	let certificates = (await db.query(CERTIFICATES_QUERY)).rows;
+
+	return certificates.map(c => {
 		return {
-			"name": certificate.name,
-			"date": certificate.date.toISOString().split('T')[0],
-			"url": certificate.url,
-			"issuer": certificate.issuer,
+			"name": c.name,
+			"date": c.date.toISOString().split('T')[0],
+			"url": c.url,
+			"issuer": c.issuer,
 		};
 	})
 }
 
-module.exports = certificates;
+module.exports = getCertificates;

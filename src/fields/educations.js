@@ -1,21 +1,22 @@
-const db = require('../db.js');
+const db = require('../utils/db.js');
+
+const EDUCATIONS_QUERY = 'SELECT * FROM experience WHERE type LIKE \'%education%\' ORDER BY "endDate" DESC';
+
 
 // Create "education" JSON object for JSON resume
-async function educations() {
-	let e = (await db.query('SELECT * FROM experience WHERE type LIKE \'%education%\'')).rows;
-	e.sort((a, b) => {
-		return b.startDate - a.startDate;
-	});
-	return e.map(education => {
+async function getEducations() {
+	let educations = (await db.query(EDUCATIONS_QUERY)).rows;
+	
+	return educations.map(e => {
 		return {
-			"institution": education.company,
-			"area": education.position,
-			"studyType": education.contract,
-			"startDate": education.startDate.toISOString().split('T')[0],
-			"endDate": education.endDate.toISOString().split('T')[0],
-			"summary": education.summary,
+			"institution": e.company,
+			"area": e.position,
+			"studyType": e.contract,
+			"startDate": e.startDate.toISOString().split('T')[0],
+			"endDate": e.endDate.toISOString().split('T')[0],
+			"summary": e.summary,
 		};
 	})
 }
 
-module.exports = educations;
+module.exports = getEducations;

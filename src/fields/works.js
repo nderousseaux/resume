@@ -1,22 +1,25 @@
-const db = require('../db.js');
+const db = require('../utils/db.js');
+
+const WORKS_QUERY = 'SELECT * FROM experience WHERE type LIKE \'%work%\' ORDER BY "endDate" DESC';
+const HIGHLIGHTS_QUERY = 'SELECT * FROM highlight';
+
 
 // Create "work" JSON object for JSON resume
-async function works() {
-	let w = (await db.query('SELECT * FROM experience WHERE type LIKE \'%work%\'')).rows;
-	let h = (await db.query('SELECT * FROM highlight')).rows;
-	w = w.sort((a, b) => {
-		return b.endDate - a.endDate;
-	});
-	return w.map(work => {
+async function getWorks() {
+	let works = (await db.query(WORKS_QUERY)).rows;
+	let highlights = (await db.query(HIGHLIGHTS_QUERY)).rows;
+
+	return works.map(w => {
 		return {
-			"company": work.company,
-			"position": work.position,
-			"startDate": work.startDate.toISOString().split('T')[0],
-			"endDate": work.endDate.toISOString().split('T')[0],
-			"summary": work.summary,
-			"highlights": h.filter(highlight => highlight.experience === work.id).map(highlight => highlight.text)
+			"company": w.company,
+			"position": w.position,
+			"startDate": w.startDate.toISOString().split('T')[0],
+			"endDate": w.endDate.toISOString().split('T')[0],
+			"summary": w.summary,
+			"highlights": highlights.filter(h => h.experience === w.id)
+				.map(h => h.text)
 		};
 	})
 }
 
-module.exports = works;
+module.exports = getWorks;
