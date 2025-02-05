@@ -17,7 +17,9 @@
     "resume",
     "jsonresume",
     "jsonresume-theme-stackoverflow",
-    "express"
+    "express",
+    "puppeteer",
+    "postgresql"
   ],
   "author": "Nathanaël Derousseaux",
   "license": "MIT",
