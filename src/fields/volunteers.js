@@ -13,8 +13,8 @@ async function getVolunteers() {
 		return {
 			"organization": v.company,
 			"position": v.position,
-			"startDate": v.startDate.toISOString().split('T')[0],
-			"endDate": v.endDate.toISOString().split('T')[0],
+			"startDate": v.startDate ? v.startDate.toISOString().split('T')[0] : null,
+			"endDate": v.endDate ? v.endDate.toISOString().split('T')[0] : null,
 			"summary": v.summary,
 			"highlights": highlights.filter(h => h.experience === v.id)
 				.map(h => h.text)

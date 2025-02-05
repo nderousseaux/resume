@@ -11,8 +11,8 @@ async function getProjects() {
 		return {
 			"name": p.name,
 			"summary": p.summary,
-			"startDate": p.startDate.toISOString().split('T')[0],
-			"endDate": p.endDate.toISOString().split('T')[0],
+			"startDate": p.startDate ? p.startDate.toISOString().split('T')[0] : null,
+			"endDate": p.endDate ? p.endDate.toISOString().split('T')[0] : null,
 			"url": p.url,
 		};
 	})

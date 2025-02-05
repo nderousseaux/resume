@@ -12,8 +12,8 @@ async function getEducations() {
 			"institution": e.company,
 			"area": e.position,
 			"studyType": e.contract,
-			"startDate": e.startDate.toISOString().split('T')[0],
-			"endDate": e.endDate.toISOString().split('T')[0],
+			"startDate": e.startDate ? e.startDate.toISOString().split('T')[0] : null,
+			"endDate": e.endDate ? e.endDate.toISOString().split('T')[0] : null,
 			"summary": e.summary,
 		};
 	})

@@ -10,7 +10,7 @@ async function getCertificates() {
 	return certificates.map(c => {
 		return {
 			"name": c.name,
-			"date": c.date.toISOString().split('T')[0],
+			"date": c.date ? c.date.toISOString().split('T')[0] : null,
 			"url": c.url,
 			"issuer": c.issuer,
 		};
