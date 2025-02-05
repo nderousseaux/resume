@@ -14,7 +14,7 @@
 <hr>
 
 ## ℹ️ About
-This is my online resume. Made with express, [json-resume](https://jsonresume.org) and [my french version of the stackoverflow theme](https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french). 
+This is my online resume. Made with express, [json-resume](https://jsonresume.org) and [my french version of the stackoverflow theme](https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french). The conversion to pdf is done with [puppeteer](https://github.com/puppeteer). The database is a postgresql database.
 
 The deployment is done via vercel.
 <p align="center">
