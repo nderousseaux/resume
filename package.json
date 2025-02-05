@@ -34,7 +34,7 @@
     "btoa": "^1.2.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "jsonresume-theme-stackoverflow": "https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french.git",
+    "jsonresume-theme-stackoverflow": "https://github.com/nderousseaux/jsonresume-theme-stackoverflow-french.git#master",
     "pg": "^8.13.1",
     "puppeteer-core": "16.1.0",
     "serve-favicon": "^2.5.0"

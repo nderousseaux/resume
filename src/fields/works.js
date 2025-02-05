@@ -1,7 +1,7 @@
 const db = require('../utils/db.js');
 
 const WORKS_QUERY = 'SELECT * FROM experience WHERE type LIKE \'%work%\' ORDER BY "endDate" DESC';
-const HIGHLIGHTS_QUERY = 'SELECT * FROM highlight';
+const HIGHLIGHTS_QUERY = 'SELECT * FROM highlight ORDER BY "order" ASC';
 
 
 // Create "work" JSON object for JSON resume
@@ -13,6 +13,9 @@ async function getWorks() {
 		return {
 			"company": w.company,
 			"position": w.position,
+			"url": w.url,
+			"website": w.website,
+			"location": w.location,
 			"startDate": w.startDate ? w.startDate.toISOString().split('T')[0] : null,
 			"endDate": w.endDate ? w.endDate.toISOString().split('T')[0] : null,
 			"summary": w.summary,
