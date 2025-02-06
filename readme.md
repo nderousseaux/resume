@@ -18,11 +18,8 @@ This is my online resume. Made with express, [json-resume](https://jsonresume.or
 
 The deployment is done via vercel.
 <p align="center">
-	<video controls height="300">
-		<source src="docs/demo.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-	<img src="docs/screenshot.png" alt="Demo of the project" height="300" />
+	<img src="docs/demo.gif" alt="Demo of the project" />
+	<img src="docs/screenshot.png" alt="Demo of the project" height="500" />
 </p>
 
 ## 📚 Features
