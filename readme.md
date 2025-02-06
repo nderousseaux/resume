@@ -19,7 +19,6 @@ This is my online resume. Made with express, [json-resume](https://jsonresume.or
 The deployment is done via vercel.
 <p align="center">
 	<img src="docs/demo.gif" alt="Demo of the project" />
-	<img src="docs/screenshot.png" alt="Demo of the project" height="500" />
 </p>
 
 ## 📚 Features
@@ -79,3 +78,8 @@ $ vercel --prod
 ```
 
 Or simply push to the main branch, if you have the vercel integration enabled.
+
+## 🌅 Some screenshots
+<p align="center">
+	<img src="docs/screenshot.png" alt="Screenshot of the project" height="500" />
+</p>
