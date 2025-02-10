@@ -31,19 +31,19 @@ You can also use it for build your own resume :
 - `POST /`: Post a json resume, and get the html resume. 
 - `POST /pdf`: Post a json resume, and get the pdf resume.
 
-Here some cheatsheet for the api :
+Here some cheatsheet for the api (-L because my vercel configuration requires it) :
 ```bash
 # GET /
-$ curl https://cv.nderousseaux.fr > resume.html
+$ curl -L https://cv.nderousseaux.fr > resume.html
 # GET /pdf
-$ curl https://cv.nderousseaux.fr/pdf > resume.pdf
+$ curl -L https://cv.nderousseaux.fr/pdf > resume.pdf
 # GET /json
-$ curl https://cv.nderousseaux.fr/json > resume.json
+$ curl -L https://cv.nderousseaux.fr/json > resume.json
 
 # POST /
-$ curl -X POST -H "Content-Type: application/json" -d @resume.json https://cv.nderousseaux.fr > resume.html
+$ curl -L -X POST -H "Content-Type: application/json" -d @resume.json https://cv.nderousseaux.fr > resume.html
 # POST /pdf
-$ curl -X POST -H "Content-Type: application/json" -d @resume.json https://cv.nderousseaux.fr/pdf > resume.pdf
+$ curl -L -X POST -H "Content-Type: application/json" -d @resume.json https://cv.nderousseaux.fr/pdf > resume.pdf
 ```
 
 If you want to see the schema of the json resume, you can see at the [jsonresume.org](https://jsonresume.org) project.
